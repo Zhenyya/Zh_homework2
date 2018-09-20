@@ -12,16 +12,25 @@ public class App {
 		System.out.println(pupil1);
 		pupil1.printSubject();
 		
-//		System.out.println();
-//		System.out.println(Subject.showSubject("physics"));
-//		System.out.println();
-//		
-//		Teacher teacher1 = new Teacher("Ira");
-//		teacher1.setAge(31);
-//		System.out.println(teacher1);
-//		teacher1.addSubject(Subject.ART);
-//		teacher1.addSubject(Subject.MUSIC);
-//		teacher1.printSubject();
+		System.out.println();
+		System.out.println(Subject.showSubject("physics"));
+		System.out.println();
+		
+		Teacher teacher1 = new Teacher("Ira");
+		teacher1.setAge(31);
+		System.out.println(teacher1);
+		teacher1.addSubject(Subject.ART);
+		teacher1.addSubject(Subject.MUSIC);
+		teacher1.printSubject();
+		
+		System.out.println();
+		Pupil pupil2 = new Pupil("Igor");
+		pupil2.setAge(14);
+		pupil2.setForm("8-A");
+		pupil2.addSubject("literature");
+		pupil2.addSubject(Subject.MUSIC);
+		System.out.println(pupil2);
+		pupil2.printSubject();
 	}
 
 }
