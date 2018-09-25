@@ -1,6 +1,6 @@
 package school;
 
-public class Teacher extends Person {
+public class Teacher extends PersonInSchool {
 	
 	public Teacher(String name) {
 		super(name);

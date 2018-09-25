@@ -1,6 +1,6 @@
 package school;
 
-public class Pupil extends Person {
+public class Pupil extends PersonInSchool {
 
 	private String form;
 

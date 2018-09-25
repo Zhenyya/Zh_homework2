@@ -13,7 +13,7 @@ public class App {
 		pupil1.printSubject();
 		
 		System.out.println();
-		System.out.println(Subject.showSubject("physics"));
+		System.out.println(Subject.getSubject("physics"));
 		System.out.println();
 		
 		Teacher teacher1 = new Teacher("Ira");
