@@ -5,10 +5,10 @@ import java.util.Set;
 
 public class Teacher extends Person {
 	
-	private Set<Subject> teacherSubjects = new HashSet<>();
+	private Set<Subject> subjects = new HashSet<>();
 	
-	public Teacher(String name) {
-		super(name);
+	public Teacher(String name, int age) {
+		super(name, age);
 	}
 
 	@Override
@@ -17,17 +17,17 @@ public class Teacher extends Person {
 	}
 	
 	public void addTeacherSubject(Subject subject) {
-		teacherSubjects.add(subject);
+		subjects.add(subject);
 	}
 
 	public void addTeacherSubject(String str) {
 		Subject subject = Subject.getSubject(str);
-		teacherSubjects.add(subject);
+		addTeacherSubject(subject);
 	}
 	
-	public void printTeacherSubject() {
+	public void printSubjects() {
 		System.out.print(getName() + "'s subjects are: ");
-		for (Subject value: teacherSubjects) {
+		for (Subject value: subjects) {
 			System.out.print(value.name() + ", ");
 		}
 		System.out.println();

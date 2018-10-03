@@ -5,11 +5,8 @@ public abstract class Person {
 	private String name;
 	private int age;
 
-	public Person(String name) {
+	public Person(String name, int age) {
 		this.name = name;
-	}
-
-	public void setAge(int age) {
 		this.age = age;
 	}
 
